@@ -19,7 +19,7 @@ else
     echo "Falha ao montar EFS"
 fi
 
-wget -O /home/ec2-user/docker-compose.yml https://raw.githubusercontent.com/hidalgobru/script/refs/heads/main/docker-compose.yml
+wget -O /home/ec2-user/docker-compose.yml #seu raw no github
 sudo chown ec2-user:ec2-user /home/ec2-user/docker-compose.yml
 
 cd /home/ec2-user
