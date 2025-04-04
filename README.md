@@ -1,5 +1,3 @@
-# Readme do projeto aws-docker (1)
-
 # AWS e Dokcer - Hospedagem de um site WordPress em um instância EC2
 
 ## Objetivo
@@ -190,10 +188,6 @@ Será necessário criar SG’s para cada ferramenta, para que possa ser possíve
           tunel:
             driver: bridge
         ```
-        
-    10. 
-    11. sdfsdf
-    12. sdfsdf
 
 ---
 
