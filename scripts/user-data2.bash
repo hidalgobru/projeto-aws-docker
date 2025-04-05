@@ -13,12 +13,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo mkdir -p /wordpress
 sudo mount -t efs -o tls #seu mount efs:/ /wordpress <- pasta do projeto
 
-if mountpoint -q /wordpress; then
-    echo "EFS montado com sucesso em /wordpress"
-else
-    echo "Falha ao montar EFS"
-fi
-
 wget -O /home/ec2-user/docker-compose.yml #seu raw no github
 sudo chown ec2-user:ec2-user /home/ec2-user/docker-compose.yml
 
