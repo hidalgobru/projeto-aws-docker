@@ -53,7 +53,7 @@ Será necessário criar SG’s para cada ferramenta, para que possa ser possíve
     | --- | --- | --- | --- |
     | EC2 | SG EC2 | HTTP (`sg-lb`) | HTTP (`sg-clb`); MYSQL/Aurora (`sg-rds`); NFS (`sg-efs`); All trafic (`0.0.0.0/0`) |
     | Aurora and RDS (Mysql) | SG RDS | MYSQL/Aurora (`sg-ec2`) | MYSQL/Aurora (`sg-ec2`) |
-    | CLB | SG CLB | HTTP (All trafic) (`0.0.0.0/0`) | HTTP (`sg-ec2`) |
+    | CLB | SG CLB | HTTP (Anywhere IPv4) (`0.0.0.0/0`) | HTTP (`sg-ec2`) |
     | EFS | SG EFS | NFS (`sg-ec2`) | NFS (`sg-ec2`) |
 
 ---
